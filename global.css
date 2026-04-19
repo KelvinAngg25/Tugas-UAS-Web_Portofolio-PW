@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior : smooth;
+}
+
+@keyframes ngetik {
+  0% { width: 0; }
+  100% { width: 100%;}
+}
+
+a {
+    text-decoration: none;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+h1{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    color: #F48037;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+}
+
+p {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.animasingetik {
+    border-right: 3px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: ngetik 3s infinite alternate ease-in-out;
+}
+
+.tentangkontak {
+    color: #F48037;
+    text-align: center;
+    border: 2px solid #F48037;
+    padding: 10px;
+    border-radius: 10px;   
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.tentangkontak:hover {
+    border: 2px solid grey;
+    background-color: #F48037;
+    color: black;
+    cursor: pointer;
+    text-align: center;   
+}
+
+.isitentangkotak a {
+    font-size: 14px;
+    color: black;
+}
+
+
+.isipendidikan {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.infosekolah {
+    gap: 20px;
+    align-items: center;
+}
+
+.itemsekolah img{
+    width: 100px;
+}
+
+.isisekolah {
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #242424;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.isisekolah:hover {
+    transform: scale(1.2);
+    z-index: 999;
+    border: 2px solid #F48037;
+    background-color: #2A2A36;
+}
+
+.isikeahlian {
+    justify-content: center;
+    align-items: center;
+}
+
+.itemkeahlian img{
+    width: 150px;
+    margin-right: 20px;
+}
+
+.itemkeahlian {
+    align-items: center;
+    width: 190px;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.5s;
+}
+
+.itemkeahlian:hover {
+    align-items: center;
+    width: 510px;
+    padding: 15px;
+    border: 5px solid #F48037;
+    background-color: #F1F3F4;
+    border-radius : 20px;
+}
+
+.card {
+    width: 260px;
+    height: 370px;
+    perspective: 1000px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    backface-visibility: hidden; 
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+.tabelkarya {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.isikarya {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infovideo {
+    gap: 10px;
+}
+
+
+.posisivideo {
+    height: 300px;
+    text-align: center;
+}
+
+.isikontak {
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.kotakitem {
+    justify-content: center;
+}
+
+.isitentangkotak {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #242424;
+    border: hidden;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #333333;
+    transition: transform 1s ease;
+}
+
+.isitentangkotak:hover {
+    background-color: #1A1A24;
+    transform: scale(1.2);
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #00E5FF;
+}
+
+.gambarkontak img {
+    width: 30px;
+}
+
+.col5 {
+    width: 5%;
+}
+
+.col8 {
+    width: 8%;
+}
+
+.col10 {
+    width: 10%;
+}
+
+.col15 {
+    width: 15%;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col23 {
+    width: 23%;
+}
+
+.col30 {
+    width: 30%;
+}
+
+.col35 {
+    width: 35%;
+}
+
+.col40 {
+    width: 40%;
+}
+
+.col45 {
+    width: 45%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+.col58 {
+    width: 58%;
+}
+
+.col60 {
+    width: 60%;
+}
+
+.col65 {
+    width: 65%;
+}
+
+.col70 {
+    width: 70%;
+}
+
+.col75 {
+    width: 75%;
+}
+
+.col80 {
+    width: 80%;
+}
+
+.col83 {
+    width: 83%;
+}
+
+.col85 {
+    width: 85%;
+}
+
+.col90 {
+    width: 90%;
+}
+
+.col95 {
+    width: 95%;
+}
+
+.col100 {
+    width: 100%;
+}

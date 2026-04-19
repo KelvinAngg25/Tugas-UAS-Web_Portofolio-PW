@@ -1,0 +1,211 @@
+@keyframes jump-out {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
+#halaman {
+    background-color: #16161E;
+    color: #E0E0E0;
+}
+
+#navbar {
+    background-color: white;
+    height: 70px;
+    justify-content: center;
+}
+
+#isinavbar {
+    background-color: white;
+    height: 69px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#isinavbar img{
+    width: 250px;
+}
+
+#pilihannavbar {
+    justify-content: space-between;
+}
+
+.itemnavbar a{
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.itemnavbar a:hover {
+    font-size: 25px;
+    color: #F48037;
+    background-color: black;
+    padding: 20px;
+}
+
+#tentang {
+    margin-top: 100px;
+    justify-content: center;
+    position: relative;
+}
+
+#isitentang {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#kotakkontak {
+    margin-top: 20px;
+}
+
+#gambarkartun {
+    display: flex;
+    justify-content: flex-end;
+}
+#gambarkartun img{
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+#pendidikan {
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.itemsekolah h2 {
+    color: #F48037;
+}
+
+.itemsekolah h3 {
+    color: #00E5FF;
+    font-size: 20px;
+}
+
+.itemsekolah p {
+    color: #E0E0E0;
+}
+
+#judulkeahlian{
+    animation: jump-out 3s alternate infinite ease-in-out;
+}
+
+#keahlian {
+    margin-bottom: 100px;
+}
+
+#bariskeahlian {
+    padding: 25px;
+    gap: 50px;
+}
+
+#isisertifikat1 {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#isisertifikat2 {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#isisertifikat1 img {
+    width: 250px;
+}
+
+#sertifikatseminar img{
+    width: 500px;
+}
+
+.isikarya h1 {
+    text-align: start;
+    font-size : 29px;
+    margin-bottom: 5px;
+    color: #00E5FF;
+}
+
+.isikarya h2 {
+    text-align: start;
+    font-size : 24px;
+    margin-bottom: 5px;
+    color: #F48037;
+}
+
+.isikarya h3 {
+    text-align: start;
+    font-size : 19px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.isikarya p {
+    text-align: justify;
+    font-size : 15px;
+    margin-bottom: 5px;
+    color: #E0E0E0;
+}
+
+#karya2 h1 {
+    text-align: end;
+}
+
+#karya2 h2 {
+    text-align: end;
+}
+
+#karya2 h3 {
+    text-align: end;
+}
+
+#kontak {
+    margin-top: 100px;
+    background-color: #F5F6FA;
+    padding-top: 20px;
+}
+
+#kontak h1 {
+    color: #F48037;
+}
+
+#kotakbesar {
+    background-color: #FAFAFA;
+    padding: 20px;
+    border : 2px solid #E0E0E0;
+    border-radius : 20px;
+    transition: transform 0.5s;
+}
+
+#kotakbesar:hover {
+    transform: scale(1.2);
+    padding: 20px;
+    border : 2px solid #F48037;
+    border-radius : 20px;
+}
+
+.isitentangkotak p{
+    color: #E0E0E0;
+}
+
+#karya {
+    margin-top: 100px;
+}
+
+#footer {
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-top: 3px solid #F48037;
+}
+
