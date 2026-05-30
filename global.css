@@ -520,6 +520,13 @@ p {
         overflow-x: hidden;
     }
 
+    .animasingetik {
+        white-space: normal;
+        overflow: visible;
+        animation: none;
+        border-right: none;
+    }
+
     #gambarkartun {
         margin-left: 0;
     }
