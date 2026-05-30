@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KelvinProject | Home</title>
-    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <script>
@@ -21,6 +22,11 @@
             <div class="container col100" id="navbar">
                 <div class="container col70" id="isinavbar">
                     <div class="item"><img src="Asset/Logo.png" alt=""></div>
+                    <div id="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="container" id="pilihannavbar">
                         <div class="itemnavbar">
                             <a href="#tentang">TENTANG</a>
@@ -158,7 +164,7 @@
                 <div class="container col100" id="searchbar">
                     <div class="container col60" id="isisearchbar">
                         <div class="col100"  data-aos="fade-right">
-                            <div class="container col100" style="gap: 10px; justify-content: center;">
+                            <div class="container col100" style="gap: 10px; justify-content: center;" id="tabelsearch">
                                 <div class="container col10 kategoridipilih" id="All" onclick="filter('All')">
                                     <img src="Asset/all.png" alt="">
                                     <p>All</p>
@@ -204,16 +210,16 @@
                 <h1 class="judul" data-aos="zoom-in">Sertifikat</h1>
                 <div class="container col100" id="isisertifikat1">
                     <div class="container col70" id="isisertifikat2">
-                        <div class="card" data-aos="fade-right">
+                        <div class="card itemserti" data-aos="fade-right">
                             <div class="inner">
                                 <div class="front"><img src="Asset/SertifikatRadnetDepan.png" alt=""></div>
                                 <div class="back"><img src="Asset/SertifikatRadnetBelakang.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="item" data-aos="fade-up">
+                        <div class="itemserti" data-aos="fade-up">
                             <img src="Asset/SertifikatMagang.png" alt="">
                         </div>
-                        <div class="item" id="sertifikatseminar" data-aos="fade-left">
+                        <div class="itemserti" id="sertifikatseminar" data-aos="fade-left">
                             <img src="Asset/SertifikatSeminar.jpeg" alt="">
                         </div>
                     </div>    
@@ -230,7 +236,7 @@
                             <p data-aos="fade-up-right">Karya ini merupakan salah satu proyek awal saya di semester pertama, yang dikerjakan sebagai pemenuhan tugas praktikum minggu ke-7 untuk mata kuliah Desain Digital. Dalam video edukatif ini, saya mengupas tuntas dan menjelaskan secara ringkas mengenai apa itu SIB (Sistem Informasi Bisnis). Tujuan utama dari video ini adalah untuk memecah informasi akademis menjadi format visual dan audio yang ringan, menarik, dan mudah dipahami oleh audiens. Proyek ini menjadi langkah awal saya dalam melatih kemampuan storytelling visual dan pengeditan video dasar.</p>
                         </div>
                         <div class="item col50 posisivideo" data-aos="fade-up-left">
-                            <video width="80%" height="100%" controls loop autoplay muted>
+                            <video width="100%" height="100%" controls loop autoplay muted>
                                 <source src="Asset/videoprak.mp4" type="video/mp4" >
                             </video>
                         </div>
@@ -239,7 +245,7 @@
                 <div class="container col100 tabelkarya">
                     <div class="container col70 isikarya">
                         <div class="item col50 posisivideo" data-aos="fade-up-right">
-                            <video width="80%" height="100%" controls loop autoplay muted>
+                            <video width="100%" height="100%" controls loop autoplay muted>
                                 <source src="Asset/videouas.mp4" type="video/mp4" >
                             </video>
                         </div>
@@ -254,7 +260,7 @@
             </div>
             <div class="col100" id="kontak">
                 <h1 class="judul" data-aos="fade-right">Kontak</h1>
-                <div class="container col100 isikontak" data-aos="zoom-in-right">
+                <div class="container col100 isikontak" data-aos="zoom-in-right" id="kotakluarkontak">
                     <div class="container col50 isikontak" id="kotakbesar">
                         <div class="item col50 kotakitem">
                             <a href="https://www.instagram.com/kel_angj" target="_blank">
@@ -285,7 +291,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container col100" id="footer">
                 <p><b>&copy; 2026 Kelvin. All rights reserved.</b></p>
             </div>
@@ -297,21 +302,21 @@
             <img src="Asset/form.png" alt="">
         </div>
     </div>
-    <div id="halamanform" class="hidden">
+    <div id="halamanform"  class="hidden">
         <div class="container col100" style="justify-content: center;" id="boxform" data-aos="fade-in">
             <div class="container col50 boxform">
                 <div id="tabelform" class="col100">
                     <p id="utama">&#8592;</p>
                     <h1 style="margin-left: -200px; margin-bottom: 20px;">Kontak Kelvin</h1>
                     <form id="contactForm" action="#" method="post">
-                        <p>Nama <span style="color: red;">*</span></p>
+                        <p style="color: #F48037">Nama <span style="color: red;">*</span></p>
                         <input type="text" name="nama" id="nama" class="isibox" placeholder="Masukkan Nama Anda..."><br><br>
-                        <p>Perusahaan</p>
+                        <p style="color: #F48037">Perusahaan</p>
                         <input type="text" name="perusahaan" id="perusahaan" class="isibox" placeholder="Nama Perusahaan... (Opsional)"><br><br>
-                        <p>Email <span style="color: red;">*</span></p>
+                        <p style="color: #F48037">Email <span style="color: red;">*</span></p>
                         <input type="text" name="email" id="email" class="isibox" placeholder="email@contoh.com"><br><br>
-                        <p>Pesan</p>
-                        <textarea name="notes" id="notes" class="isibox" placeholder="Ceritakan Kebutuhan Anda... (Opsional)"></textarea><br><br><br>
+                        <p style="color: #F48037">Pesan</p>
+                        <textarea name="notes" id="notes" class="isibox" style="max-width: 95%;" placeholder="Ceritakan Kebutuhan Anda... (Opsional)"></textarea><br><br><br>
                         <button type="button" onclick="kirimPesan()" class="isibox tombol" id="tombolkirim">Kirim Pesan</button>
                     </form>
                 </div>

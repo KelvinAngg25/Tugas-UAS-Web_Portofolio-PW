@@ -118,7 +118,7 @@ function kirimPesan() {
         boxKonfirmasi.classList.remove('hidden')
         boxPengisian.classList.add('hidden')
         boxKonfirmasi.innerHTML = `
-        <div class="container col50 boxform">
+        <div class="container col50 boxform" style="border: 1px solid cyan;">
             <div class="col100" style="text-align: center; align-items:center;">
                 <img src="Asset/berhasil.png" alt="" width="150px;" id="centang"><br><br>
                 <p>Terima kasih, ${inputNama.value}.</p>
@@ -181,6 +181,11 @@ inputEmail.addEventListener('blur',function inputError() {
         inputEmail.classList.remove('error');
     }
 });
+
+function toggleMenu() {
+    var menu = document.querySelector("#pilihannavbar");
+    menu.classList.toggle("aktif");
+}
 
 
 

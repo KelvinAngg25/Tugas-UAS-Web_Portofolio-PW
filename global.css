@@ -233,25 +233,29 @@ p {
     transform: scale(1.2);
     cursor: pointer;
     font-weight: bold;
-    border: 2px solid #00E5FF;
+    border: 2px solid cyan;
 }
 
 .itemkategori {
     gap: 4px;
     cursor: pointer;
     margin-top:10px;
-    border: 1px solid #F48037;
+    color : #E0E0E0;
+    border: 1px solid #333;
+    background-color: #1E1E2E;
     border-radius : 10px;
     align-items: center;
     justify-content: center;
     padding: 8px;
+    transition: 0.5s ease;
 }
 
 .itemkategori:hover {
     gap: 4px;
     margin-top:10px;
-    border: 1px solid #F48037;
-    background-color: #242424;
+    border: 1px solid #00E5FF;
+    background-color: #1E1E2E;
+    color : #E0E0E0;
     border-radius : 10px;
     align-items: center;
     justify-content: center;
@@ -266,9 +270,17 @@ p {
     align-items: center;
     justify-content: center;
     padding: 8px;
-    background-color: grey;
-    border: 1px solid darkgrey;
+    border: 1px solid #F48037;
+    background-color: #F48037;
     color: black;
+}
+
+.boxform {
+    justify-content: center;
+    padding : 20px;
+    border-radius : 10px;
+    background-color: #1E1E2E;
+    border: 2px solid #F48037;
 }
 
 .hidden {
@@ -283,16 +295,15 @@ p {
 
 .tombol {
     cursor: pointer;
-    background-color: white;
+    background-color: #F48037;
 }
 
 .tombol:hover {
-    background-color: black;
-    color: white;
+    background-color: cyan;
 }
 
 .error {
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 .gambarkontak img {
@@ -401,4 +412,265 @@ p {
 
 .col100 {
     width: 100%;
+}
+
+@media (max-width : 1400px) {
+    #isisertifikat2, .itemserti {
+        margin-bottom: 20px;
+        text-align : center;
+        width: 100%;
+        display: block;
+    }
+
+    #kotakbesar {
+        width: 90%;
+    }
+    
+    #kotakbesar:hover {
+        transform: scale(1.05);
+    }
+
+    .itemkeahlian img {
+        width: 140px;
+    }
+
+    .itemkeahlian:hover {
+        width: 440px;
+    }
+
+    #Website {
+        width: 20%;
+    }
+
+    #Programming {
+        width: 30%;
+    }
+
+    #Animation {
+        width: 25%;
+    }
+
+    #Desain {
+        width: 35%;
+    }
+
+    #Networking {
+        width: 25%;
+    }
+}
+
+
+@media (max-width : 1265px) {
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    #hamburger span {
+        margin-right: 30px;
+        width: 30px;
+        height: 3px;
+        background-color: #F48037;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #pilihannavbar {
+        display: none ;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+        z-index: 998;
+    }
+
+    #pilihannavbar.aktif {
+        display: flex;
+    }
+    
+    .itemnavbar a {
+        font-size: 16px;
+        padding: 12px 20px;
+        display: block;
+    }
+
+    .itemnavbar a:hover {
+        font-size: 16px;
+        padding: 12px 20px;
+        display: block;
+    }
+
+    .itemkategori, .kategoridipilih, #tabelsearch {
+        display: inline-block;
+        text-align : center;
+    }
+
+    #gambarkartun {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #gambarkartun {
+        margin-left: 0;
+    }
+
+    #isinavbar {
+        width: 100%;
+    }
+    #isinavbar img {
+        width: 150px; 
+        margin-left: 30px;
+    }
+
+    .judul {
+        margin-top: -50px;
+    }
+
+    #isitentang {
+        display: block;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    #gambarkartun {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #pendidikan {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .isipendidikan {
+        width: 100%;
+    }
+
+    .isisekolah {
+        display: block;
+        width: 100%;
+    }
+
+    .infosekolah {
+        display: block;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .isisekolah:hover {
+        transform: scale(1.02);
+    }
+
+    .itemsekolah{
+        padding-top: 5px;
+        align-items: center;
+        text-align: center;
+    }
+
+    iframe {
+        display: block;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    #isisearchbar {
+        width: 95%;
+    }
+
+    .bariskeahlian {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .itemkeahlian {
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        width: 140px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .audio {
+        position: relative;
+        top : -20px;
+    }
+
+    .itemkeahlian img {
+        width: 120px;
+    }
+
+    .itemkeahlian:hover {
+        width: 440px;
+    }
+
+    .bariskeahlian {
+        margin-bottom: -50px;
+    }
+
+    .isikarya {
+        width: 95%;
+        display: block;
+    }
+
+    #kontak {
+        padding-top: 50px;
+    }
+
+    #kotakluarkontak {
+        text-align : center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .isitentangkotak:hover {
+        transform: scale(1.05);
+    }
+
+    .boxform {
+        width: 90%;
+    }
+
+
+    #tabelform {
+        margin-left: 20px;
+    }
+    
+    #tabelform h1 {
+        margin-top: 50px;
+        padding-left: 180px;
+    }
+
+    #utama {
+        margin-left: -30px;
+    }
+
+    #utama:hover {
+        margin-left: -30px;
+    }
+
+    .isibox {
+        width: 95%;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
 }

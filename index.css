@@ -12,6 +12,19 @@
 body {
     background-color: #16161E;
     color: #E0E0E0;
+    overflow-x: hidden;
+}
+
+input {
+    background-color: #2A2A3E;
+    border: 1px solid #F48037;
+    color: #E0E0E0;
+}
+
+textarea {
+    background-color: #2A2A3E;
+    border: 1px solid #F48037;
+    color: #E0E0E0;
 }
 
 #navbar {
@@ -59,6 +72,7 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
+    gap: 100px;
 }
 
 #kotakkontak {
@@ -167,7 +181,7 @@ body {
 }
 
 #kontak {
-    padding-top: 100px;
+    margin-top: 120px;
     background-color: #F5F6FA;
     padding-top: 20px;
 }
@@ -200,6 +214,7 @@ body {
 }
 
 #footer {
+    position: absolute;
     justify-content: center;
     background-color: white;
     color: black;
@@ -224,7 +239,6 @@ body {
     right: 30px;
     color: orange;
     transition: transform 0.5s;
-
 }
 
 #panah a:hover{
@@ -249,9 +263,9 @@ body {
     position: fixed;
     bottom: 30px;
     right: 17px;
-    color: orange;
-    background-color: cyan;
+    background-color: #F48037;
     border-radius: 100px;
+    transition: 0.5s ease;
 }
 
 #form:hover{
@@ -265,8 +279,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 17px;
-    color: cyan;
-    background-color: orange;
+    background-color: cyan;
     border-radius: 100px;
 }
 
@@ -282,13 +295,6 @@ body {
     margin-top: 50px;
 }
 
-.boxform {
-    justify-content: center;
-    padding : 20px;
-    border-radius : 10px;
-    background-color: orange;
-}
-
 #tabelform {
     margin-left: 140px; 
     margin-top: 20px;
@@ -296,7 +302,7 @@ body {
 
 #utama {
     cursor: pointer;
-    margin-left: -150px;
+    margin-left: -140px;
     margin-top: -50px;
     font-size: 60px;
     margin-bottom: -50px;
@@ -305,7 +311,7 @@ body {
 #utama:hover {
     color: cyan;
     cursor: pointer;
-    margin-left: -150px;
+    margin-left: -140px;
     margin-top: -50px;
     font-size: 60px;
     margin-bottom: -50px;
