@@ -519,6 +519,15 @@ p {
     body {
         overflow-x: hidden;
     }
+
+    .judultentang {
+        width: 100%;
+    }
+
+    .animasingetik {
+        width: 100%;
+    }
+
     #gambarkartun {
         margin-left: 0;
     }
