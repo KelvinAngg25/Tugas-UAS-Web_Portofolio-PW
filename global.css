@@ -11,6 +11,15 @@
   100% { width: 100%;}
 }
 
+@keyframes bounce {
+    0%   { transform: scale(0); rotate: 360deg;}
+    20%  { transform: scale(1.2); rotate : 0deg;}
+    50% { transform: scale(1); }
+    70% { transform: scale(1);}
+    90% { transform: scale(1.2); rotate : 0deg;}
+    100% {transform: scale(0); rotate : 360deg;}
+}
+
 a {
     text-decoration: none;
     font-family: "Luckiest Guy", cursive;
@@ -124,7 +133,7 @@ p {
     align-items: center;
     width: 190px;
     padding: 20px;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     transition: width 0.5s;
 }
@@ -136,6 +145,11 @@ p {
     border: 5px solid #F48037;
     background-color: #F1F3F4;
     border-radius : 20px;
+}
+
+.bariskeahlian {
+    padding: 25px;
+    gap: 50px;
 }
 
 .card {
@@ -222,6 +236,65 @@ p {
     border: 2px solid #00E5FF;
 }
 
+.itemkategori {
+    gap: 4px;
+    cursor: pointer;
+    margin-top:10px;
+    border: 1px solid #F48037;
+    border-radius : 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.itemkategori:hover {
+    gap: 4px;
+    margin-top:10px;
+    border: 1px solid #F48037;
+    background-color: #242424;
+    border-radius : 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.kategoridipilih {
+    gap: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius : 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: grey;
+    border: 1px solid darkgrey;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.isibox {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tombol {
+    cursor: pointer;
+    background-color: white;
+}
+
+.tombol:hover {
+    background-color: black;
+    color: white;
+}
+
+.error {
+    border: 2px solid red;
+}
+
 .gambarkontak img {
     width: 30px;
 }
@@ -238,8 +311,20 @@ p {
     width: 10%;
 }
 
+.col12 {
+    width: 12%;
+}
+
 .col15 {
     width: 15%;
+}
+
+.col17 {
+    width: 17%;
+}
+
+.col18 {
+    width: 18%;
 }
 
 .col20 {
