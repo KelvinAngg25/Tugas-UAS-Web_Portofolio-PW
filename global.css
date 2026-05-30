@@ -459,11 +459,8 @@ p {
     }
 }
 
-@media (max-width: 1300px) {
-    body {
-        overflow-x: hidden;
-    }
 
+@media (max-width : 1265px) {
     #hamburger {
         display: flex;
         flex-direction: column;
@@ -514,6 +511,15 @@ p {
     }
 
     #gambarkartun {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    #gambarkartun {
         margin-left: 0;
     }
 
@@ -526,13 +532,8 @@ p {
     }
 
     .judul {
-        width: 100%;
         margin-top: -50px;
     }
-
-    .animasingetik {
-        width: 100%;
-    }           
 
     #isitentang {
         display: block;
