@@ -535,7 +535,7 @@ p {
         overflow: visible;
         animation: none;
         border-right: none;
-        width: 100%;
+        width: auto;
     }
 
     #isitentang {
