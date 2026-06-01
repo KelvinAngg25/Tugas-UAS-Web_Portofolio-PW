@@ -215,6 +215,7 @@ textarea {
 
 #footer {
     position: absolute;
+    z-index: 997;
     justify-content: center;
     background-color: white;
     color: black;
@@ -232,6 +233,7 @@ textarea {
 
 #panah a{
     text-decoration : none;
+    z-index: 999;
     cursor: pointer;
     font-size : 50px;
     position: fixed;
@@ -242,6 +244,7 @@ textarea {
 }
 
 #panah a:hover{
+    z-index: 999;
     transform : scaleX(1.2);
     text-decoration : none;
     cursor: pointer;
@@ -253,6 +256,7 @@ textarea {
 }
 
 #form {
+    z-index: 999;
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -269,6 +273,7 @@ textarea {
 }
 
 #form:hover{
+    z-index: 999;
     width: 50px;
     height: 50px;
     padding: 10px;
