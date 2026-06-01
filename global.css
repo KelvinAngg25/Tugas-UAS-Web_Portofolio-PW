@@ -310,6 +310,16 @@ p {
     width: 30px;
 }
 
+.footer {
+    position: absolute;
+    z-index: 997;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-top: 3px solid #F48037;
+}
+
 .col5 {
     width: 5%;
 }
