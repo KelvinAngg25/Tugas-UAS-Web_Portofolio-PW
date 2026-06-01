@@ -111,16 +111,9 @@ textarea {
     color: #E0E0E0;
 }
 
-#judulkeahlian{
-    animation: jump-out 3s alternate infinite ease-in-out;
-}
-
 #keahlian {
     margin-bottom: 100px;
 }
-
-
-
 #isisertifikat1 {
     justify-content: center;
     align-items: center;

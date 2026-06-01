@@ -540,7 +540,7 @@ p {
         overflow-x: hidden;
         width: 100%;
     }
-    
+
     #halamanutama {
         overflow-x: hidden;
         width: 100%;
@@ -582,10 +582,6 @@ p {
         gap: 0;
         width: 90%;
         display: block;
-    }
-
-    #tentang {
-        overflow: hidden;
     }
 
     .item {
@@ -646,14 +642,22 @@ p {
         display: inline-block;
     }
 
+    .animasingetik {
+        white-space: nowrap;
+        min-width: 0%;
+        max-width: 100%;
+    }
+
     .itemkeahlian {
         align-items: center;
         text-align: center;
+        white-space: nowrap;
         overflow: hidden;
         width: 140px;
         display: block;
         text-align: center;
         margin: 0 auto;
+        max-width: 100%;
     }
 
     .audio {
@@ -679,7 +683,7 @@ p {
     }
 
     #kontak {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     #kotakluarkontak {
