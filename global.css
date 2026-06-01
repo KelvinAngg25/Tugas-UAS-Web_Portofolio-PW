@@ -415,6 +415,11 @@ p {
 }
 
 @media (max-width : 1400px) {
+    #isisertifikat1 {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
     #isisertifikat2, .itemserti {
         margin-bottom: 20px;
         text-align : center;
@@ -551,11 +556,12 @@ p {
     }
 
     .judul {
-        overflow-x: hidden;
         margin-top: -50px;
     }
 
     #isitentang {
+        gap: 0;
+        width: 90%;
         display: block;
     }
 
