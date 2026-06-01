@@ -425,10 +425,6 @@ p {
 }
 
 @media (max-width : 1400px) {
-    #gambarkartun img {
-        width: 90%;
-    }
-
     #sertifikatseminar img {
         width: 90%;
     }
